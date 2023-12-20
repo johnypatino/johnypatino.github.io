@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Patino</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar Section-->
+    <div id="navbar-container">
+        <header> 
+            <a href="#" class="logo">JP</a>
+            <a  class="toggle-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+            <nav class="navbar">
+                <div class="navbar-links">
+                    <a href="#about-container">About Me</a>
+                    <a href="#">Personal Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+     <!---------------- Home --------------- -->
+    <div id="home-container" class="container">
+        <div id="home-text">
+            <h1>Hello, I'm Jonathan Patino</h1>
+            <h4>an Atlanta Based Software Developer</h2>
+        </div>
+    </div>
+   
+    <!--About Me-->
+    <div id="about-container" class="container">
+            <div id="about-header">About Me</div>
+            <div class="about-body">
+                <div id="about-left">
+                    <ul>
+                        <li>Atlanta raised Software Developer looking to bring ideas to life through software!</li>
+                        <li>Current student at Kennesaw State University with a passion in Creating and Learning.</li>
+                        <li>Hobbies include Guitar, Skateboarding, and Video games!</li>
+                    </ul>
+                </div>
+                <div id="about-right">
+                    <div id="about-right-header"> Languages and Libraries </div>
+                    <div class="about-right-list">
+                        <ul>
+                            <li class="list"><div class="list-text">HTML</div><div><img src="images/html-logo.png" alt="HTML Logo"></div></li>
+                            <li class="list"><div class="list-text">CSS</div> <img src="images/css-logo.png" alt="CSS Logo"></li>
+                            <li class="list"><div class="list-text">Javascript</div> <img src="images/javascript-logo.png" alt="Javascript Logo"></li>
+                            <li class="list"><div class="list-text">Java</div> <img src="images/java-logo.png" alt="Java Logo"></li>
+                            <li class="list"><div class="list-text">Python</div><img src="images/python-logo.png" alt="Python Logo"></li>
+                            <li class="list"><div class="list-text">C#</div><img src="images/csharp-logo.png" alt="C# Logo"></li>
+                            <li class="list"><div class="list-text">ReactJS</div> <img src="images/react-logo.png" alt="React Logo"></li>
+                            <li class="list"><div class="list-text">Bootstrap</div> <img src="images/bootstrap-logo.png" alt="Bootstrap Logo"></li>
+                            <li class="list"><div class="list-text">Flask</div> <img src="images/flask-logo.png" alt="Flask Logo"></li>
+                            <li class="list"><div class="list-text">SQL</div> <img src="images/sql-logo.png" alt="SQL Logo"></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+
+    <!--Personal Projects-->
+    <div id="projects-container" class="container">
+        <div id="projects-text">Projects</div>
+        <div class="projects">
+            <div class="projectdiv">
+                <div class="project-title">Spotify API Search</div>
+                <div class="project-img"><img src="images/Spotify-searchimg.png" alt="Spotify Search app screenshot"></div>
+                <div class="project-desc">Web application that lists the albums of an artist using Spotify Web API. Developed using the Bootstrap and React libraries.</div>
+                <div class="project-button"><button class="projectcode" onclick="location.href='https:/\/github.com/johnypatino/SpotifySearch'" type="button">
+                    <img src="images/github.png" alt="Github logo">
+                    <div>Source Code</div>
+                </button></div>
+            </div>
+            <div class="projectdiv">
+                <div class="project-title">Notes App</div>
+                <div class="project-img"><img src="images/Notes-img.png" alt="Notes app screenshot"></div>
+                <div class="project-desc">
+                    Simple Web Notes application with login system and user login authentication. Developed using Python and Flask.
+                </div>
+                <div class="project-button"><button class="projectcode" onclick="location.href='https:/\/github.com/johnypatino/pythonWebsite'" type="button">
+                    <img src="images/github.png" alt="Github logo">
+                    <div>Source Code</div>
+                </button></div>
+            </div>
+            <div class="projectdiv">
+                <div class="project-title">System Design Project</div>
+                <div class="project-img"><img src="images/system-design.png" alt="Prototype image"></div>
+                <div class="project-desc">Software development of a restaurant application to coordinate work activites. Prototypes created in Figma.</div>
+                <div class="project-button"><button class="projectcode">
+                    
+                    <img src="images/github.png" alt="Github logo">
+                    <div>Source Code</div>
+                    
+                </div>
+            </div>
+            <!-- Project Template
+            <div class="projectdiv">
+                <div class="project-title"></div>
+                <div class="project-img"></div>
+                <div class="project-desc"></div>
+            </div> 
+           -->
+        </div>  
+    </div>
+
+    <!--Contact -->
+    <div class="contactMe">
+        <div class="contact-title"> Contact Me</div>
+        <div class="contact-containers">
+            <div class="contact-form">
+                <form onsubmit="emailSend(); reset(); return false;">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required id="email">
+                    </div>
+                    <div class="form-group">
+                       <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button class="contact-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/johnypatino" target="_blank">
+        Jonathan Patino 
+        <img src="images/github.png" height="15px">
+        </a>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script> <!--Script for email send-->
+<script src="script.js"></script>
+</html>
